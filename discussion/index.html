@@ -1,0 +1,159 @@
+<!-- 
+  Version Control System
+    - also known as VCS
+    - a tool used to manage changes to files, code, documents & other collection of information overtime
+    
+    - track modifications, revert to previous versions
+      -- version tracking
+      -- collaboration
+      -- branching & merging
+      -- change history
+      -- backup & recovery
+
+  GIT
+    - distributed version control system
+    - designed to handle everything from small to large project
+    - developed by Linus Torvalds in 2005
+
+    - Git configuration:
+      -- git config --global user.name "<your_name>"
+      -- git config --global user.email "<your_email>"
+    
+    - common Git commands:
+      -- git init
+          - initialize a new git repository
+          - syntax: git init
+      -- git status
+          - allows us to show the working directory status
+          - syntax: git status
+      -- git add .
+          - allows us to stage changes for next commit
+          - syntax: [git add] . or <file_name>
+      -- git commit
+          - allows us to save changes
+          - syntax: git commit -m "<message>"
+            - m represent message
+      -- git remote -v
+      -- git push origin master
+
+  SSH Key
+    - a pair of cryptographic keys (private & public)
+    - used to authenticate & secure communication between a client & a server in Secure Shell (SSH) protocol
+    - syntax: ssh-keygen
+      - -t rsa
+      - -b 4096
+-->
+
+<!--
+  Boilerplate
+    - refers to standardize, reusable code or text that serves as foundation for new projects
+    - provides structure or starting point
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro HTML</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Introduction to Semantic HTML</h1>
+    </header>
+
+    <!-- nav defines navigation block such as menu or link to other pages -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#contact_us">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- start main -->
+    <main>
+      <article>
+        <h2>Understanding Web Development</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut
+          eveniet officia, repellendus, aspernatur architecto magni hic
+          consequatur blanditiis, tempora sunt fugiat natus officiis iste
+          distinctio ab! Atque, quisquam et.
+        </p>
+      </article>
+      <article>
+        <h2>Best Practices</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut
+          eveniet officia, repellendus, aspernatur architecto magni hic
+          consequatur blanditiis, tempora sunt fugiat natus officiis iste
+          distinctio ab! Atque, quisquam et.
+        </p>
+      </article>
+      <!-- end main -->
+
+      <!-- start aside -->
+      <aside>
+        <h3>Related Resources</h3>
+        <ul>
+          <li>
+            <a href="#">CSS Guide</a>
+          </li>
+          <li>
+            <a href="#">JavaScript Guide</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+
+      <!-- start footer -->
+      <footer>
+        <p>&copy; 2024 My Website</p>
+      </footer>
+      <!-- end footer -->
+
+      <div id="sample" class="content-box">
+        sample content-box
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+          vero, mollitia commodi tenetur omnis officia eaque rerum modi at eius
+          quidem enim, voluptatibus illo sunt blanditiis aliquam cumque illum
+          reiciendis.
+        </p>
+      </div>
+      <div class="border-box highlight">
+        sample border-box
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+          vero, mollitia commodi tenetur omnis officia eaque rerum modi at eius
+          quidem enim, voluptatibus illo sunt blanditiis aliquam cumque illum
+          reiciendis.
+        </p>
+      </div>
+
+      <form>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

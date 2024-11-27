@@ -1,0 +1,114 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+} */
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/*
+  Selector
+    - pattern used to select & style HTML Elements
+    - * (universal selector)
+      - targets all elements
+    - Type selectors
+      - targets elements using their HTML tag
+*/
+
+/* Type selector */
+p {
+  font-size: 16px;
+}
+
+/* Class selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* Type selector */
+#sample {
+  background-color: red;
+}
+
+/* Attribute selector target elements based on their attributes */
+input[type="text"] {
+  border: 1px solid black;
+}
+
+/* Group selector targets multiple elements, separated by commas */
+h1,
+h2 {
+  font-family: Arial, sans-serif;
+}
+
+/*
+  Combinators
+    - relationship between elements
+    - Descendant ( )
+      - matches the element
+    - Child (>)
+      - matches child elements
+    - Adjacent Sibling (+)
+      - matches next sibling
+*/
+
+div p {
+  color: blue;
+}
+
+div > p {
+  color: red;
+}
+
+h2 + p {
+  font-size: 14px;
+  color: blue;
+}
+
+/*
+  Specificity
+    - determines which rule take precedence when multiple rules match same element
+
+    - Specificity Hierarchy: 
+      - inline style
+      - id selector
+      - class, attributes & pseudo-class
+      - type or pseudo-element
+      - universal selector
+    
+    - Four-part value (a, b, c, d)
+      - a: inline
+      - b: id
+      - c: class, attributes & pseudo-class
+      - d: type or pseudo-element
+
+      Sample:
+        specificity (0, 1, 1, 0)
+        #header .highlight {
+          color: red;
+        }
+        
+        specificity (0, 0, 1, 1)
+        p.highlight {
+          color: red;
+        }
+*/
+
+p {
+  /* important rule is used to override normal cascading order of style */
+  color: black !important;
+}
